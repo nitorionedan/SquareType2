@@ -276,19 +276,6 @@ void PlayerMng::Finalize()
 	DeleteGraph(player[First].h);
 	DeleteGraph(player[Second].h);
 	DeleteGraph(h_boom);
-	for (auto itr = graph.vh_red.begin();    itr < graph.vh_red.end();    ++itr)	DeleteGraph(*itr);
-	for (auto itr = graph.vh_blue.begin();   itr < graph.vh_blue.end();   ++itr)	DeleteGraph(*itr);
-	for (auto itr = graph.vh_purple.begin(); itr < graph.vh_purple.end(); ++itr)	DeleteGraph(*itr);
-	for (auto itr = graph.vh_black.begin(); itr < graph.vh_black.end(); ++itr)	DeleteGraph(*itr);
-	for (auto itr = graph.vh_statusbar.begin(); itr < graph.vh_statusbar.end(); ++itr)	DeleteGraph(*itr);
-	for (auto itr = graph.vh_zanki.begin(); itr < graph.vh_zanki.end(); ++itr)	DeleteGraph(*itr);
-
-	graph.vh_red.clear();
-	graph.vh_blue.clear();
-	graph.vh_purple.clear();
-	graph.vh_statusbar.clear();
-	graph.vh_zanki.clear();
-	graph.vh_black.clear();
 }
 
 

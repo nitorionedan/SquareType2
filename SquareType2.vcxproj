@@ -57,6 +57,9 @@
     <ClInclude Include="src\StageSelect.h" />
     <ClInclude Include="src\Task.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{35183780-B694-4BCC-B208-59C8E3C3588D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

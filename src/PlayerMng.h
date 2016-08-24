@@ -43,8 +43,28 @@ public:
 };
 
 
-class Graph_Date{
+class Graph_Date
+{
 public:
+	Graph_Date(){}
+	~Graph_Date()
+	{
+		for (auto ary : vh_red)		DeleteGraph(ary);
+		for (auto ary : vh_blue)	DeleteGraph(ary);
+		for (auto ary : vh_purple)	DeleteGraph(ary);
+		for (auto ary : vh_yellow)	DeleteGraph(ary);
+		for (auto ary : vh_green)	DeleteGraph(ary);
+		for (auto ary : vh_orange)	DeleteGraph(ary);
+		for (auto ary : vh_black)	DeleteGraph(ary);
+
+		vh_red.clear();
+		vh_blue.clear();
+		vh_purple.clear();
+		vh_statusbar.clear();
+		vh_zanki.clear();
+		vh_black.clear();
+	}
+
 	double x, y;
 	vector<int> vh_red;
 	vector<int> vh_blue;
